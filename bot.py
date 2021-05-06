@@ -22,7 +22,7 @@ while not isComplete:
     # find add to cart button
     try:
         atcBtn = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, ".add-to-cart-button"))
+            EC.element_to_be_clickable((By.CSS_SELECTOR, ".addToCartButton"))
         )
     except:
         driver.refresh()
